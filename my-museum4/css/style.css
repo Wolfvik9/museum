@@ -1,0 +1,503 @@
+/* *Common */
+html {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4b2914;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+/* *Header */
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #d19745, #cd834e, #b56a3b, #8b532f);
+  box-shadow: 2px 0px 15px black;
+  width: 100%;
+  height: 80px;         /* фиксируем высоту */
+  padding: 0 20px;       /* оставляем боковые отступы */
+}
+
+.header__intro {
+  background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.header__intro__small {
+  background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 45vh;
+  width: 100%;
+}
+
+.header__title {
+  color: transparent;
+  background: linear-gradient(45deg, #d19745, #cd834e, #b56a3b, #8b532f);
+   background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+  font-size: 15rem;
+}
+.header__title__small {
+  color: transparent;
+  background: linear-gradient(45deg, #d19745, #cd834e, #b56a3b, #8b532f);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  text-shadow: 
+    0 0 15px rgba(255, 107, 107, 0.4),
+    0 0 30px rgba(78, 205, 196, 0.3),
+    0 0 45px rgba(69, 183, 209, 0.2);
+  
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  
+  animation: 
+    gradientShift 3s ease infinite,
+    glowPulse 2s ease-in-out infinite alternate;
+  
+  position: relative;
+  display: inline-block;
+}
+
+/* Анимация градиента */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Анимация свечения */
+@keyframes glowPulse {
+  from {
+    text-shadow: 
+      0 0 15px rgba(255, 107, 107, 0.4),
+      0 0 30px rgba(78, 205, 196, 0.3),
+      0 0 45px rgba(69, 183, 209, 0.2);
+  }
+  to {
+    text-shadow: 
+      0 0 25px rgba(255, 107, 107, 0.6),
+      0 0 45px rgba(78, 205, 196, 0.5),
+      0 0 65px rgba(69, 183, 209, 0.4);
+  }
+}
+
+
+/* *Nav */
+.header__nav {
+  margin: 0 100px;
+}
+
+span.nav__link:hover {
+  cursor: pointer;
+}
+
+.nav__link {
+  font-size: 2rem;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.nav__link,
+.nav__list {
+  transition: all 0.2s;
+  padding: 15px 0px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 25px;
+}
+
+/* Inner List */
+.nav__item:has(.nav__list) {
+  position: relative;
+}
+
+.nav__item .nav__list {
+  display: none;
+}
+
+.nav__item:hover > .nav__list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  padding: 20px;
+  left: 0;
+  background: linear-gradient(45deg, #fdd9a8, #d09e79, #cd8b63, #926245);
+  border-radius: 10px;
+  box-shadow: 2px 0px 15px rgb(180, 179, 179);
+}
+
+/* *Title */
+.title {
+  margin: 40px;
+}
+
+.title__heading {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #f8d7c0;
+   text-shadow: 
+    0 0 5px #f8d7c061,
+    0 0 10px #f8d7c060,
+    0 0 15px #f8d7c05d,
+    0 0 20px #f8d7c065;
+}
+
+
+
+.title__paragraph {
+  font-size: 2rem;
+  text-align: justify;
+  color: #f8d7c0;
+     text-shadow: 
+    0 0 5px #f8d7c061,
+    0 0 10px #f8d7c060,
+    0 0 15px #f8d7c05d,
+    0 0 20px #f8d7c065;
+}
+
+.title__list li {
+  list-style: disc;
+  font-size: 2rem;
+}
+
+.title__list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.title__paragraph:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.title__img {
+  border-radius: 20px;
+  width: 700px;
+}
+
+.title__float_left .title__img {
+  float: right;
+  margin: 0px 25px 10px 0px;
+}
+
+.title__float_right .title__img {
+  float: right;
+  margin: 0px 0px 10px 25px;
+}
+
+/* *Main */
+main section {
+   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* *Atricle - ИСПРАВЛЕННЫЕ СТИЛИ */
+.article {
+ width: 100%;
+  margin: 0;
+  display: flex; 
+  flex-direction: row-reverse; /* меняет порядок на ТЕКСТ СЛЕВА, КАРТИНКА СПРАВА */
+  align-items: flex-start; 
+  gap: 25px; 
+  border-radius: 20px;
+  padding: 25px;
+  background: linear-gradient(145deg, #f9f7f4, #987d5c, #4b2914); /* мягкий фон */
+  box-shadow: none;
+  border: 20px solid #532b0e(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.article:hover {
+  transform: translateY(-10px) scale(1.02); /* приподняли + увеличили */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* более яркая тень */
+}
+
+@keyframes articleBgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.article {
+  background: linear-gradient(145deg, #f9f7f4, #987d5c, #4b2914);
+  background-size: 200% 200%;
+}
+
+.article:hover {
+  animation: articleBgShift 5s ease infinite;
+}
+
+/* чтобы у последней статьи не было линии */
+.article:last-child {
+  border-bottom: none;
+}
+
+.article__info {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.article__info p {
+  margin-bottom: 10px;
+}
+
+.article__info ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.article__title {
+  padding: 15px;
+  border-radius: 10px; /* Скруглённые углы */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.article:hover .article__title {
+  color: #4b2914;
+  text-shadow: 0 0 10px rgba(209,151,69,0.4);
+}
+
+.article__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__date {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Мы добавили "section.article " в начало селектора */
+section.article .article__text {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  /* Добавляем цвет текста, чтобы он был виден на фоне */
+  color: #222;
+
+  /* --- НОВЫЕ СТРОКИ ДЛЯ ОБРЕЗКИ ТЕКСТА --- */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Укажите, сколько строк оставить (например, 3) */
+  -webkit-box-orient: vertical;
+  /* --- КОНЕЦ НОВЫХ СТРОК --- */
+}
+
+.article__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__link,
+.article__link_text {
+  color: rgb(160, 93, 16);
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+.article__link:hover {
+  text-decoration: underline;
+}
+
+.article__link_text {
+  display: inline;
+}
+
+/* Стили для контейнера картинки */
+.article__float_left {
+  flex-shrink: 0; 
+  width: 300px; 
+}
+
+.article__float_left .article__img {
+  width: 100%; 
+  display: block;
+  border-radius: 20px;
+}
+
+/* Стили для текстового блока */
+.article__content {
+    flex-grow: 1;
+    /* Добавляем цвет текста, чтобы он был виден на фоне */
+    color: #222;
+}
+
+/* *Footer */
+.footer {
+  background-color: rgb(23 31 34);
+  padding: 30px;
+}
+
+.footer__text {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Стили для загруженного контента */
+.content-card {
+    background-color: #ffffff;
+    padding: 25px 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    border: 1px solid #e0e0e0;
+}
+
+.content-article {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.content-image {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.content-text {
+    flex: 1; /* Занимает оставшееся место */
+    /* (Здесь была лишняя скобка '}' в вашем файле, я ее убрал) */
+}
+
+
+/* * ======================================================
+ * НОВЫЕ СТИЛИ (Практическая работа №4)
+ * ======================================================
+ */
+        
+/* Контейнер для всей статьи "Подробнее" */
+.single-item {
+    background-color: #ffffff; /* Белый фон для самой статьи */
+    color: #333333;         /* Темный текст для читаемости */
+    padding: 25px 30px;     /* Внутренние отступы */
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Легкая тень */
+}
+
+/* Заголовок статьи (напр. "Пабло Пикассо") */
+.single-item__title {
+    font-size: 2.2em; /* Крупный заголовок */
+    color: #50362c;    /* Темно-синий */
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+/* Контейнер для изображения */
+.single-item__image-container {
+    text-align: center; /* Центрируем изображение */
+    margin-bottom: 25px;
+}
+
+/* Само изображение */
+.single-item__img {
+    max-width: 100%;    /* Адаптивность */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Основной текст статьи */
+.single-item__content {
+    font-size: 1.6em;   /* Увеличиваем шрифт для читаемости (было 1.1em, но 2rem в .article__text, поэтому 1.6em) */
+    line-height: 1.7;   /* Увеличиваем межстрочный интервал */
+    color: #333;
+}
+
+/* Абзацы внутри текста */
+.single-item__content p {
+    margin-bottom: 1.2em;
+}
+
+/* * ======================================================
+ * Стили для кнопок "Подробнее" и "Назад"
+ * ======================================================
+ */
+
+/* 1. Ссылка "Подробнее..." на странице списка */
+.read-more {
+    display: inline-block;
+    font-size: 1.6em;   /* Увеличили шрифт (до 16px, если html=10px) */
+    font-weight: bold;
+    color: #e37f3d;      /* Синий цвет */
+    margin-top: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.read-more:hover {
+    text-decoration: underline;
+    color: #b96f29;
+}
+
+/* 2. Кнопка "Вернуться к списку" на странице статьи */
+.async-back-link {
+    display: inline-block;
+    padding: 12px 18px;   /* Увеличили кнопку */
+    font-size: 1.4em;     /* Увеличили шрифт (14px) */
+    font-weight: bold;
+    color: #ffffff;         /* Белый текст */
+    background-color: #db9334; /* Синий фон */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 25px;     /* Отступ сверху */
+    transition: background-color 0.3s ease;
+}
+.async-back-link:hover {
+    background-color: #b97b29; /* Более темный синий при наведении */
+    text-decoration: none;
+}
