@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица ноутбуков</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Экран</th>
+                    <th>Цвет</th>
+                    <th>Разрешение</th>
+                    <th>CPU</th>
+                    <th>GPU</th>
+                    <th>RAM</th>
+                    <th>Объем накопителя</th>
+                    <th>ОС</th>
+                    <th>Выбор</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name">Ноутбук DEXP Aquilon</td>
+                    <td class="screen">14"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Celeron N4020</td>
+                    <td>Intel UHD Graphics 600</td>
+                    <td class="ram">4 ГБ</td>
+                    <td class="storage">SSD 128 ГБ</td>
+                    <td>Windows 11 Pro</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Irbis NB257</td>
+                    <td class="screen">14"</td>
+                    <td>Серый</td>
+                    <td class="resolution">HD (1366x768)</td>
+                    <td>Intel Celeron 3350</td>
+                    <td>Intel UHD Graphics</td>
+                    <td class="ram">4 ГБ</td>
+                    <td class="storage">eMMC 64 ГБ</td>
+                    <td>Windows 10 Home</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Digma EVE 14 C414</td>
+                    <td class="screen">14"</td>
+                    <td>Серый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Celeron N4020</td>
+                    <td>Intel UHD Graphics 600</td>
+                    <td class="ram">4 ГБ</td>
+                    <td class="storage">eMMC 64 ГБ</td>
+                    <td>Windows 10 Home</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Irbis NB262</td>
+                    <td class="screen">15.6"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Celeron 3350</td>
+                    <td>Intel HD Graphics 500</td>
+                    <td class="ram">4 ГБ</td>
+                    <td class="storage">eMMC 128 ГБ</td>
+                    <td>Windows 10 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук DEXP Aquilon Pro</td>
+                    <td class="screen">15.6"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Celeron N4020</td>
+                    <td>Intel UHD Graphics 600</td>
+                    <td class="ram">4 ГБ</td>
+                    <td class="storage">SSD 128 ГБ</td>
+                    <td>Windows 11 Pro</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук ASUS VivoBook 15</td>
+                    <td class="screen">15.6"</td>
+                    <td>Черный</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Core i3-1115G4</td>
+                    <td>Intel UHD Graphics</td>
+                    <td class="ram">8 ГБ</td>
+                    <td class="storage">SSD 256 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук HP Pavilion 15</td>
+                    <td class="screen">15.6"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>AMD Ryzen 5 5500U</td>
+                    <td>AMD Radeon Graphics</td>
+                    <td class="ram">8 ГБ</td>
+                    <td class="storage">SSD 512 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Lenovo IdeaPad 3</td>
+                    <td class="screen">14"</td>
+                    <td>Серый</td>
+                    <td class="resolution">HD (1366x768)</td>
+                    <td>Intel Celeron N4020</td>
+                    <td>Intel UHD Graphics 600</td>
+                    <td class="ram">4 ГБ</td>
+                    <td class="storage">eMMC 64 ГБ</td>
+                    <td>Windows 10 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Acer Aspire 3</td>
+                    <td class="screen">15.6"</td>
+                    <td>Черный</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>AMD Ryzen 3 3250U</td>
+                    <td>AMD Radeon Vega 3</td>
+                    <td class="ram">4 ГБ</td>
+                    <td class="storage">SSD 128 ГБ</td>
+                    <td>Windows 10 Home</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Dell Inspiron 15</td>
+                    <td class="screen">15.6"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Core i5-1135G7</td>
+                    <td>Intel Iris Xe Graphics</td>
+                    <td class="ram">8 ГБ</td>
+                    <td class="storage">SSD 256 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук MSI Modern 14</td>
+                    <td class="screen">14"</td>
+                    <td>Серый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Core i7-1165G7</td>
+                    <td>Intel Iris Xe Graphics</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 512 ГБ</td>
+                    <td>Windows 11 Pro</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук ASUS ROG Strix G15</td>
+                    <td class="screen">15.6"</td>
+                    <td>Черный</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>AMD Ryzen 7 5800H</td>
+                    <td>NVIDIA GeForce RTX 3050</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 1 ТБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Lenovo ThinkPad E15</td>
+                    <td class="screen">15.6"</td>
+                    <td>Черный</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Core i5-1135G7</td>
+                    <td>Intel Iris Xe Graphics</td>
+                    <td class="ram">8 ГБ</td>
+                    <td class="storage">SSD 256 ГБ</td>
+                    <td>Windows 11 Pro</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук HP EliteBook 840</td>
+                    <td class="screen">14"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Core i7-1165G7</td>
+                    <td>Intel Iris Xe Graphics</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 512 ГБ</td>
+                    <td>Windows 11 Pro</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Acer Nitro 5</td>
+                    <td class="screen">15.6"</td>
+                    <td>Черный</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>AMD Ryzen 5 5600H</td>
+                    <td>NVIDIA GeForce GTX 1650</td>
+                    <td class="ram">8 ГБ</td>
+                    <td class="storage">SSD 256 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Samsung Galaxy Book Pro</td>
+                    <td class="screen">15.6"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Core i5-1135G7</td>
+                    <td>Intel Iris Xe Graphics</td>
+                    <td class="ram">8 ГБ</td>
+                    <td class="storage">SSD 256 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Xiaomi Mi Notebook Pro</td>
+                    <td class="screen">15.6"</td>
+                    <td>Серый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Core i7-1165G7</td>
+                    <td>Intel Iris Xe Graphics</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 512 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Razer Blade 15</td>
+                    <td class="screen">15.6"</td>
+                    <td>Черный</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Core i7-11800H</td>
+                    <td>NVIDIA GeForce RTX 3060</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 512 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук MacBook Air M1</td>
+                    <td class="screen">13.3"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">Retina (2560x1600)</td>
+                    <td>Apple M1</td>
+                    <td>Apple M1 GPU</td>
+                    <td class="ram">8 ГБ</td>
+                    <td class="storage">SSD 256 ГБ</td>
+                    <td>macOS Monterey</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук MacBook Pro 13</td>
+                    <td class="screen">13.3"</td>
+                    <td>Серый</td>
+                    <td class="resolution">Retina (2560x1600)</td>
+                    <td>Apple M1</td>
+                    <td>Apple M1 GPU</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 512 ГБ</td>
+                    <td>macOS Monterey</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Surface Laptop 4</td>
+                    <td class="screen">13.5"</td>
+                    <td>Платиновый</td>
+                    <td class="resolution">PixelSense (2256x1504)</td>
+                    <td>Intel Core i5-1135G7</td>
+                    <td>Intel Iris Xe Graphics</td>
+                    <td class="ram">8 ГБ</td>
+                    <td class="storage">SSD 256 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Gigabyte Aorus 15G</td>
+                    <td class="screen">15.6"</td>
+                    <td>Черный</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Core i7-11800H</td>
+                    <td>NVIDIA GeForce RTX 3070</td>
+                    <td class="ram">32 ГБ</td>
+                    <td class="storage">SSD 1 ТБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук MSI Creator 15</td>
+                    <td class="screen">15.6"</td>
+                    <td>Серый</td>
+                    <td class="resolution">4K (3840x2160)</td>
+                    <td>Intel Core i7-11800H</td>
+                    <td>NVIDIA GeForce RTX 3060</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 512 ГБ</td>
+                    <td>Windows 11 Pro</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук ASUS ZenBook 14</td>
+                    <td class="screen">14"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>AMD Ryzen 7 5700U</td>
+                    <td>AMD Radeon Graphics</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 512 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Lenovo Legion 5</td>
+                    <td class="screen">15.6"</td>
+                    <td>Черный</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>AMD Ryzen 7 5800H</td>
+                    <td>NVIDIA GeForce RTX 3060</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 512 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук HP Spectre x360</td>
+                    <td class="screen">13.5"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">3K (3000x2000)</td>
+                    <td>Intel Core i7-1165G7</td>
+                    <td>Intel Iris Xe Graphics</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 1 ТБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Dell XPS 13</td>
+                    <td class="screen">13.4"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">Full HD+ (1920x1200)</td>
+                    <td>Intel Core i7-1165G7</td>
+                    <td>Intel Iris Xe Graphics</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 512 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук Acer Swift 3</td>
+                    <td class="screen">14"</td>
+                    <td>Серебристый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>AMD Ryzen 5 5500U</td>
+                    <td>AMD Radeon Graphics</td>
+                    <td class="ram">8 ГБ</td>
+                    <td class="storage">SSD 256 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук MSI Prestige 14</td>
+                    <td class="screen">14"</td>
+                    <td>Серый</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>Intel Core i5-1135G7</td>
+                    <td>Intel Iris Xe Graphics</td>
+                    <td class="ram">8 ГБ</td>
+                    <td class="storage">SSD 256 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox" checked></td>
+                </tr>
+                <tr>
+                    <td class="name">Ноутбук ASUS TUF Gaming A15</td>
+                    <td class="screen">15.6"</td>
+                    <td>Черный</td>
+                    <td class="resolution">Full HD (1920x1080)</td>
+                    <td>AMD Ryzen 7 5800H</td>
+                    <td>NVIDIA GeForce RTX 3050</td>
+                    <td class="ram">16 ГБ</td>
+                    <td class="storage">SSD 512 ГБ</td>
+                    <td>Windows 11 Home</td>
+                    <td><input type="checkbox" class="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table-container">
+        <table>
+            </table>
+    </div>
+
+    <div id="output-container" style="margin-top: 30px; padding: 20px; background-color: white; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+        <h2>Данные выбранных ноутбуков</h2>
+    </div>
+
+    <script>
+// 1. Вспомогательные функции
+// Функция для получения заголовков таблицы из thead
+function getHeaders() {
+    // Находим строку с заголовками внутри thead
+    const headerRow = document.querySelector('table thead tr');
+    // Если строка не найдена, возвращаем пустой массив
+    if (!headerRow) return [];
+    
+    // Получаем текст всех th, преобразуем в массив, убираем пробелы
+    const headers = Array.from(headerRow.querySelectorAll('th')).map(th => th.textContent.trim());
+    // Возвращаем все заголовки, кроме последнего
+    return headers.slice(0, -1); 
+}
+
+// Функция для форматирования данных одной строки в HTML-список
+function formatRowData(rowData, headers) {
+    // Получаем название ноутбука
+    const name = rowData[0];
+    //  Создаю div-карточку!
+    let html = `<div class="laptop-card"><h3>${name}</h3><ul>`; 
+
+    // Начинаем цикл со второго элемента (индекс 1), пропуская название
+    for (let i = 1; i < headers.length; i++) {
+        // Проверка, чтобы избежать ошибки, если в строке меньше данных, чем заголовков
+        if (i < rowData.length) {
+            // Получаем заголовок, удаляем переносы строк и пробелы
+            const header = headers[i].replace(/\n/g, ' ').trim();
+            // Получаем значение ячейки, удаляем пробелы
+            const value = rowData[i].trim();
+            // Добавляем двоеточие и пробел в конце заголовка
+            const displayHeader = header + ': ';
+            // ИЗМЕНЕНИЕ: Выделяем заголовок жирным (strong) внутри li
+            html += `<li><strong>${displayHeader}</strong>${value}</li>`; 
+        }
+    }
+    html += `</ul></div>`;
+    // Возвращаем сформированный HTML-блок
+    return html;
+}
+
+// 2. Рекурсивная функция обхода
+let outputHTML = '';
+
+
+//Рекурсивная функция для обхода строк таблицы
+function recursiveTraverseRows(rows, headers, index) {
+    // Базовый случай: прекращение рекурсии, если индекс достиг конца массива строк.
+    if (index >= rows.length) {
+        return;
+    }
+
+    // Получаем текущую строку таблицы
+    const row = rows[index];
+    // Ищем чекбокс внутри текущей строки
+    const checkbox = row.querySelector('input[type="checkbox"]');
+
+    // Проверяем, существует ли чекбокс И отмечен ли он
+    if (checkbox && checkbox.checked) {
+        // Извлекаем все ячейки (td) из текущей строки
+        const cellNodes = row.querySelectorAll('td');
+        // Преобразуем NodeList ячеек в массив текста, удаляя пробелы
+        const rowData = Array.from(cellNodes).map(td => td.textContent.trim());
+        
+        // Форматируем данные строки (кроме последнего элемента - чекбокса) и добавляем к outputHTML
+        outputHTML += formatRowData(rowData.slice(0, -1), headers);
+    }
+
+    // Рекурсивный шаг: вызов функции для следующей строки
+    recursiveTraverseRows(rows, headers, index + 1);
+}
+
+// 3. Добавление обработчиков событий
+// Назначает обработчик 'change' всем чекбоксам
+function attachCheckboxListeners() {
+    // Выбираем все чекбоксы с классом 'checkbox'
+    const checkboxes = document.querySelectorAll('.checkbox');
+    
+    // Перебираем каждый найденный чекбокс
+    checkboxes.forEach(checkbox => {
+        // Назначаем обработчик события 'change' (срабатывает при изменении состояния)
+        // Каждый раз при клике на чекбокс будет вызываться processTable()
+        checkbox.addEventListener('change', processTable);
+    });
+}
+
+// 4. Основная функция запуска
+// Главная функция для обработки таблицы и обновления вывода
+function processTable() {
+    // ... (Начало функции остается без изменений)
+    const tableBody = document.querySelector('table tbody');
+    if (!tableBody) return;
+
+    const allRows = tableBody.querySelectorAll('tr');
+    const headers = getHeaders();
+    const outputContainer = document.getElementById('output-container');
+    
+    // ИЗМЕНЕНИЕ 1: Добавляем класс для стилизации контейнера вывода
+    outputContainer.classList.add('card-grid-container'); 
+
+    // ... (Сброс outputHTML и запуск recursiveTraverseRows остаются без изменений)
+    outputHTML = '';
+    recursiveTraverseRows(allRows, headers, 0);
+
+    // Вывод результатов
+    const heading = outputContainer.querySelector('h2');
+    outputContainer.innerHTML = '';
+    outputContainer.appendChild(heading); 
+
+    if (outputHTML) {
+        //Создала новый элемент <div> для содержимого!
+        const contentDiv = document.createElement('div');
+        // Добавила класс для сетки карточек!
+        contentDiv.classList.add('cards-wrapper');
+        // Вставила собранный HTML
+        contentDiv.innerHTML = outputHTML;
+        // Добавила div с данными в контейнер
+        outputContainer.appendChild(contentDiv);
+    } else {
+        // Если данных нет, создаем параграф
+        const p = document.createElement('p');
+        p.textContent = 'Нет выбранных ноутбуков.';
+        // Удалила класс сетки, если нет карточек
+        outputContainer.classList.remove('card-grid-container'); 
+        outputContainer.appendChild(p);
+    }
+}
+// 5. Инициализация
+// Событие, срабатывающее после полной загрузки DOM-дерева
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Сначала запускаем обработку для изначально отмеченных чекбоксов
+    processTable(); 
+    
+    // 2. Затем назначаем слушателей для всех чекбоксов
+    attachCheckboxListeners();
+});
+    </script>
+</body>
+</html>
