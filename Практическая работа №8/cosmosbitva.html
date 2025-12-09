@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космическая битва</title>
+    <link rel="stylesheet" href="cosmoc.css" />
+</head>
+<body>
+    <h1>КОСМИЧЕСКАЯ БИТВА</h1>
+    
+    <div class="game-container">
+        <div class="game-ui">
+            <div class="score-container">
+                Счёт: <span id="score">0</span>
+            </div>
+            <div class="controls">
+                <button id="startBtn">Start</button>
+            </div>
+        </div>
+        
+        <div id="gameArea">
+            <div class="game-over" id="gameOver">
+                <h2>GAME OVER</h2>
+                <p>Ваш счёт: <span id="finalScore">0</span></p>
+                <button id="restartGameBtn">Играть снова</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="instructions">
+        <h2>Как играть</h2>
+        <p>Управляйте космическим кораблём с помощью клавиш:</p>
+        <div class="keys">
+            <div class="key">←</div>
+            <div class="key">→</div>
+            <div class="key">A</div>
+            <div class="key">D</div>
+        </div>
+        <p>Избегайте столкновения с астероидами!</p>
+        <p>Счёт увеличивается каждую секунду. Постарайтесь продержаться как можно дольше!</p>
+    </div>
+
+   <script src="function.js"></script>
+</body>
+</html>
